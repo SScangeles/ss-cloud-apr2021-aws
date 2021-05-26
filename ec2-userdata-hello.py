@@ -10,7 +10,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         self.wfile.write(b'Hello world')
 
 print("hello world starting at port 8000")
-httpd = socketserver.TCPServer(('', 8000), Handler)
+httpd = socketserver.TCPServer(('', 80), Handler)
 httpd.serve_forever()
 
 
